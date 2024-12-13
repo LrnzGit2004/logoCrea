@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import IconPicker from "./components/iconPicker";
+import IconPicker from "./components/IconPickerBlock";
 import { Download, icons } from "lucide-react";
 import ColorPicker from "./components/ColorPicker";
 import { logoPresets } from "./presepts";

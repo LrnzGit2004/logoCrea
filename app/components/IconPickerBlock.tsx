@@ -7,8 +7,10 @@ type iconPickerProps = {
   onIconSelect: (icon: string) => void;
 };
 type IconName = keyof typeof icons;
-
-const iconPicker: React.FC<iconPickerProps> = ({ selected, onIconSelect }) => {
+const IconPickerBlock: React.FC<iconPickerProps> = ({
+  selected,
+  onIconSelect,
+}) => {
   const [selectedIcon, setSelectedIcon] = useState<string>(selected);
   const [searchText, setSearchText] = useState<string>("");
 
@@ -83,4 +85,4 @@ const iconPicker: React.FC<iconPickerProps> = ({ selected, onIconSelect }) => {
   );
 };
 
-export default iconPicker;
+export default IconPickerBlock;
